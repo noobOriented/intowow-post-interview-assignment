@@ -21,20 +21,20 @@ A Movie Recommendation Website
   - Building database
     - Run shell script under /MovieRecommendation:
     '''
-      python manage.py makemigrations
-      python manage.py migrate
+      $ python manage.py makemigrations
+      $ python manage.py migrate
     '''
-    - Run /data_processing.ipynb
+    - $ jupyter notebook data_processing.ipynb
   - Run 4 shell script under /MovieRecommendation:
   '''
-    redis-server
+    $ redis-server
   '''
   '''
-    celery -A MovieRecommendation worker -l info
+    $ celery -A MovieRecommendation worker -l info
   '''
   '''
-    celery -A MovieRecommendation beat -l info
+    $ celery -A MovieRecommendation beat -l info
   '''
   '''
-    python manage.py runserver
+    $ python manage.py runserver
   '''
