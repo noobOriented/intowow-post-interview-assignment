@@ -18,23 +18,14 @@ A Movie Recommendation Website
   - MovieLens Full: https://grouplens.org/datasets/movielens/latest/
   
 ### Run
-  - Building database
+  - Building database:
     - Run shell script under /MovieRecommendation:
-    '''
-      $ python manage.py makemigrations
-      $ python manage.py migrate
-    '''
-    - $ jupyter notebook data_processing.ipynb
+        $ python manage.py makemigrations
+        $ python manage.py migrate
+    - 
+        $ jupyter notebook data_processing.ipynb
   - Run 4 shell script under /MovieRecommendation:
-  '''
-    $ redis-server
-  '''
-  '''
-    $ celery -A MovieRecommendation worker -l info
-  '''
-  '''
-    $ celery -A MovieRecommendation beat -l info
-  '''
-  '''
-    $ python manage.py runserver
-  '''
+        $ redis-server
+        $ celery -A MovieRecommendation worker -l info
+        $ celery -A MovieRecommendation beat -l info
+        $ python manage.py runserver
