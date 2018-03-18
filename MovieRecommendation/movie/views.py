@@ -59,7 +59,7 @@ def serialize_movie_model_object(movie_objects):
 		elements = {'id': movie.id,
 					'title': movie.title,
 					'imdb_id': '%07d' % movie.imdb_id,
-					'ave_rating': '%.1f' % movie.get_ave_rating,}
+					'ave_rating': '%.1f' % movie.ave_rating,}
 		result.append(elements)
 
 	return result

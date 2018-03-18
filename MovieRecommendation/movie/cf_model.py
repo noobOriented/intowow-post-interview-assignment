@@ -59,7 +59,7 @@ def get_ranking(user, qset_ave=None):
 	if qset_ave is not None:
 		result = qset_ave.filter(id__in=result_index)
 	else:
-		result = Movie.objects.filter(id__in=result_index)
+		result = Movie.objects.filter(id__in=result_index).annotate(ave_rating=Avg('rating__score'))
 	return result
 
 def init_matrix():
