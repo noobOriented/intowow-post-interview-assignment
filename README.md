@@ -5,19 +5,27 @@ A Movie Recommendation Website
 ## Getting Started
 ### Prerequisites
   - Python 3.6
-  - Django 2.0.2 https://github.com/django/django
-  - Tensorflow 1.0.0
-  - Keras 2.1.4
-  - PostgreSQL 10.3
-  - Redis 2.10.6
-  - Celery 4.1.0
+  - Jupyter Notebook 5.0.0 http://jupyter.readthedocs.io/en/latest/install.html
+  - Django 2.0.2 https://docs.djangoproject.com/en/2.0/intro/install/
+  - Tensorflow 1.0.0 https://www.tensorflow.org/install/
+  - Keras 2.1.4 https://keras.io/#installation
+  - PostgreSQL 10.3 https://wiki.postgresql.org/wiki/Detailed_installation_guides
+  - Redis 2.10.6 https://redis.io/download
+  - Celery 4.1.0 http://docs.celeryproject.org/en/latest/getting-started/first-steps-with-celery.html#installing-celery
   
 ### Dataset
   Download the Movie-Lens Full dataset and save it as /ml-latest
   - MovieLens Full: https://grouplens.org/datasets/movielens/latest/
   
 ### Run
-  Run four shell script under /MovieRecommandetion directory:
+  - Building database
+    - Run shell script under /MovieRecommendation:
+    '''
+      python manage.py makemigrations
+      python manage.py migrate
+    '''
+    - Run /data_processing.ipynb
+  - Run 4 shell script under /MovieRecommendation:
   '''
     redis-server
   '''
