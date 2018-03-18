@@ -41,4 +41,4 @@ A Movie Recommendation Website
     ```
     ```bash
     $ python manage.py runserver
-  ```
+    ```
