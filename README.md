@@ -19,25 +19,26 @@ A Movie Recommendation Website
   
 ### Run
   - Building database:
-    - Run under /MovieRecommendation:
-        ```bash
-        $ python manage.py makemigrations
-        $ python manage.py migrate
-        ```
-    - Data processing, feeding and model training
-        ```bash
-        $ jupyter notebook data_processing.ipynb
-        ```
-  - Run on 4 individual command windows under /MovieRecommendation:
-    ```bash
-    $ redis-server
-    ```
-    ```bash
-    $ celery -A MovieRecommendation worker -l info
-    ```
-    ```bash
-    $ celery -A MovieRecommendation beat -l info
-    ```
-    ```bash
-    $ python manage.py runserver
-    ```
+  1. Run under /MovieRecommendation:
+      ```bash
+      $ python manage.py makemigrations
+      $ python manage.py migrate
+      ```
+  2. Data processing, feeding and model training
+      ```bash
+      $ jupyter notebook data_processing.ipynb
+      ```
+  - Run server:
+  Run on 4 individual command windows under /MovieRecommendation:
+  ```bash
+  $ redis-server
+  ```
+  ```bash
+  $ celery -A MovieRecommendation worker -l info
+  ```
+  ```bash
+  $ celery -A MovieRecommendation beat -l info
+  ```
+  ```bash
+  $ python manage.py runserver
+  ```
