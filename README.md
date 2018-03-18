@@ -5,15 +5,15 @@ A Movie Recommendation Website
 ## Getting Started
 ### Prerequisites
   - Python 3.6
-  - Django 2.0.2
+  - Django 2.0.2 https://github.com/django/django
   - Tensorflow 1.0.0
   - Keras 2.1.4
   - PostgreSQL 10.3
   - Redis 2.10.6
   - Celery 4.1.0
   
-### Datasets
-  Download the datasets and save it as /ml-latest
+### Dataset
+  Download the Movie-Lens Full dataset and save it as /ml-latest
   - MovieLens Full: https://grouplens.org/datasets/movielens/latest/
   
 ### Run
