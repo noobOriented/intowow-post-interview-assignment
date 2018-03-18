@@ -1,0 +1,29 @@
+ <!-- templates/home.html -->
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+	{# for guest user #}
+  <p>You are not logged in.</p>
+  <p>
+  	<a href="{% url 'login' %}">login</a> | <a href="{% url 'signup' %}">signup</a>
+  </p>
+
+  <p>Recommended Movies:</p>
+  <div id="rate">
+		{% if movie_list %}
+			{% for movie in movie_list %}
+			<div class="card">
+				<img src="{{ omdb_api_url }}{{ movie.imdb_id|stringformat:"07d" }}">
+				<div class="content">
+					<h3 class="title">
+						{{ movie.title }}
+						<span class="score">{{ movie.ave_rating | stringformat:".1f"   }}</span>
+					</h3>
+				</div>
+			</div>
+			{% endfor %}
+		{% endif %}
+	</div>
+{% endblock %}

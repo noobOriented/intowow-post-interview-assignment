@@ -1,0 +1,30 @@
+{% if highest_rating_movie_list %}
+	You have rated:
+	{% for rating in user.rating_set.all %}
+		<li>{{ rating.movie }}: {{ rating.score }}</li>
+	{% endfor %}
+	<p>Wanna have some movies?</p>
+	<p>Recommended Movies:</p>
+	{% for movie in highest_rating_movie_list %}
+		<li> Star: {{ movie.get_ave_rating|stringformat:".1f" }}. {{ movie.title }}</li>
+		<img src="{{ omdb_api_url }}{{ movie.imdb_id|stringformat:"07d" }}">
+
+		<form onsubmit="ratingSubmit()" method="post">
+			{% csrf_token %}
+			{{ form.as_p }}
+			<input type="number" name="score" min="0" max="5" value="0">
+			<input type="submit" value="Submit">
+		</form>
+
+	{% endfor %}
+
+{% endif %}
+
+{% block javascript %}
+	<script type="text/javascript">
+		function ratingSubmit(e) {
+			e.preventDefault()
+			alert('fuck')
+		}
+	</script>
+{% endblock %}
