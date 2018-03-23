@@ -1,6 +1,7 @@
 # Intowow post-interview assignment
 
 A Movie Recommendation Website 
+![home](https://raw.githubusercontent.com/noobOriented/intowow-post-interview-assignment/master/images/home.png)
 
 ## Getting Started
 ### Prerequisites
