@@ -4,10 +4,10 @@ A Movie Recommendation Website
 
 ## Getting Started
 ### Prerequisites
-  - Python 3.6
+  - Python 3.6 https://www.python.org
   - Jupyter Notebook 5.0.0 http://jupyter.readthedocs.io/en/latest/install.html
   - Django 2.0.2 https://docs.djangoproject.com/en/2.0/intro/install/
-  - django-extensions
+  - django-extensions https://django-extensions.readthedocs.io/en/latest/
   - Tensorflow 1.0.0 https://www.tensorflow.org/install/
   - Keras 2.1.4 https://keras.io/#installation
   - PostgreSQL 10.3 https://wiki.postgresql.org/wiki/Detailed_installation_guides
