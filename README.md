@@ -7,8 +7,8 @@ A Movie Recommendation Website providing the following features:
    * password
 3) Users can sign-in with his/her (email, password) pair
 4) After signing-in, the website will 
-   a) Show movies which have been rated by the user.
-   b) Recommend a list of movies, which have not been rated by the user.
+   1) Show movies which have been rated by the user.
+   2) Recommend a list of movies, which have not been rated by the user.
 5) For each recommended movie, user can rate it on a 1 star-5 stars scale.
 6) After the movie is rated, it is removed from the recommendation list.
 7) The website will remember these ratings, combine them with existing movie rating data,
