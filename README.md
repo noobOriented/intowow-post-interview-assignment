@@ -5,7 +5,6 @@ A Movie Recommendation Website providing the following features:
 2) Users can sign-up for a new account, providing his/her
    * email
    * password
-   a) If the email has been registered before, the website will reject the sign-up
 3) Users can sign-in with his/her (email, password) pair
 4) After signing-in, the website will 
    a) Show movies which have been rated by the user.
