@@ -1,6 +1,22 @@
 # Intowow post-interview assignment
+(two-week project)
+A Movie Recommendation Website providing the following features:
+1) For guest users (user not logged in), the website recommend movies with highest average ratings
+2) Users can sign-up for a new account, providing his/her
+   * email
+   * password
+   a) If the email has been registered before, the website will reject the sign-up
+3) Users can sign-in with his/her (email, password) pair
+4) After signing-in, the website will 
+   a) Show movies which have been rated by the user.
+   b) Recommend a list of movies, which have not been rated by the user.
+5) For each recommended movie, user can rate it on a 1 star-5 stars scale.
+6) After the movie is rated, it is removed from the recommendation list.
+7) The website will remember these ratings, combine them with existing movie rating data,
+   and recompute the recommendation model on a periodical basis.
+8) The recommendation list will dynamically reloads itself based on the up-to-date model.
+   
 
-A Movie Recommendation Website 
 ![home](https://raw.githubusercontent.com/noobOriented/intowow-post-interview-assignment/master/images/home.png)
 
 ## Getting Started
