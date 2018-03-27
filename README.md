@@ -59,3 +59,6 @@ A Movie Recommendation Website providing the following features:
     ```bash
     $ python manage.py runserver
     ```
+## Reference:
+
+- [Fast Incremental Matrix Factorization for Recommendation with Positive-Only Feedback](https://link.springer.com/chapter/10.1007/978-3-319-08786-3_41)
